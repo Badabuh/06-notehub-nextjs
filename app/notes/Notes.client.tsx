@@ -25,6 +25,7 @@ export default function NotesClient() {
     queryFn: () =>
       fetchNotes({ search: text, page: currentPage, perPage: NOTES_PER_PAGE }),
     placeholderData: keepPreviousData,
+    refetchOnMount: false,
   });
 
   const pageCount = Math.max(data?.totalPages ?? 0, 1);

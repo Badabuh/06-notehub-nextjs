@@ -1,4 +1,4 @@
-import NoteDetailsClient from "../../../components/NoteDetails/NoteDelails.client";
+import NoteDetailsClient from "./NoteDetails.client";
 import {
   QueryClient,
   dehydrate,
